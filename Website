@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEMVocate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #272761;
+    }
+
+    .header {
+      background-color: #2E343D;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 200px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #FEFEFE;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      height: 50vh;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0F784A;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #333;
+    }
+
+    .footer {
+      background-color: #333333;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+      margin-top: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>STEMVocate</h1>
+    <p>Unlock the World of STEM Education</p>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to STEMVocate</h1>
+    <p>STEMVocate is an innovative online platform dedicated to promoting STEM education and fostering the next generation of scientists, technologists, engineers, and mathematicians. Our mission is to empower learners of all ages to explore the wonders of STEM subjects and develop critical thinking skills.</p>
+    <p>Through our interactive courses, expert-led workshops, and engaging resources, we aim to make STEM education accessible, enjoyable, and inspiring. Join us on this exciting journey and become a STEMVocate!</p>
+    <a class="btn" href="#">Enroll Now</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 STEMVocate. All rights reserved.</p>
+  </div>
+</body>
+
+</html>

@@ -45,14 +45,42 @@
       }
 
       /* Styling for the navigation bar */
+
       .nav {
         margin-bottom: 50px;
-        margin-left: 10px;
+        margin-left: 5px;
+      }
+      li {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: 0.4s all ease;
+        margin-right: 20px;
+      }
+      li:hover {
+        color: #cdcdcd;
+        transition: 0.4s all ease;
+      }
+      li::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0px;
+        background-color: #0051ff;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
       }
 
+      li:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
       /* Styling for each item in the navigation bar */
       .nav li {
-        display: inline;
+        display: inline-block;
       }
 
       /* Styling for the links in the navigation bar */
@@ -63,7 +91,7 @@
         color: #fff;
         text-decoration: none;
         border-radius: 4px;
-        margin-right: 10px;
+
         font-size: 16px;
       }
       img {

@@ -89,6 +89,38 @@
       /* Styling for each item in the navigation bar */
       .nav li {
         display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: 0.4s all ease;
+        margin-right: 20px;
+        width: 90px;
+      }
+
+      .nav li:hover {
+        color: #cdcdcd;
+        transition: 0.4s all ease;
+      }
+
+      .nav li::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0px;
+        background-color: #0051ff;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+      }
+
+      .nav li:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      .nav li:last-child {
+        margin-right: 0;
       }
 
       /* Styling for the links in the navigation bar */
@@ -180,10 +212,10 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>STEMVocate Course</h1>
+    <div class="container fade-in">
+      <h1>STEMVocate Extended Learning</h1>
 
-      <ul class="nav">
+      <ul class="nav fade-in">
         <li><a href="STEMVocate.htm">Home</a></li>
         <li><a href="#">Courses</a></li>
         <li><a href="https://www.stemvocate.com/">Website</a></li>
@@ -193,7 +225,7 @@
       <img class="fade-in" src="Stemvocate logo.png" alt="STEMVocate Logo" />
 
       <h1>About Us</h1>
-      <p class="about-content">
+      <p class="about-content fade-in">
         Welcome to STEMVocate's About Us page. We are dedicated to spreading the
         joys of robotics and learning to youth around Northern Virginia. Our
         mission is to inspire young minds to explore the fields of Science,
@@ -204,10 +236,10 @@
         education.
       </p>
     </div>
-    <div class="container">
+    <div class="container fade-in">
       <h1>Contributers</h1>
       <h2>Aarav Mohanty</h2>
-      <div class="container-profile">
+      <div class="container-profile fade-in">
         <img src="IMG-7462.JPG" class="profile" alt="Image of Aarav Mohanty" />
         <p class="profile-content">
           Aarav is the founder of STEMVocate and he aspires to improve the
@@ -218,7 +250,7 @@
         </p>
       </div>
       <h2>Paul Lee</h2>
-      <div class="container-profile">
+      <div class="container-profile fade-in">
         <img src="IMG-7462.JPG" class="profile" alt="Image of Aarav Mohanty" />
         <p class="profile-content">
           Aarav is the founder of STEMVocate and he aspires to improve the

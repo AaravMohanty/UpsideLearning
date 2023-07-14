@@ -10,6 +10,264 @@
       name="description"
       content="STEMVocate is a NPO dedicated to spread the joys of robotics and learning to youth around Northern Virginia"
     />
+    <title>STEMVocate Course About Us</title>
+    <style>
+      /* Styling for the body of the page */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #141414;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Styling for the container div */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+        padding-top: 10px;
+        background-color: #1e1e1e;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .container-profile {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #1e1e1e;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+
+      /* Styling for the heading */
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 30px;
+        margin-left: 25px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 20px;
+        display: inline;
+      }
+
+      /* Styling for the about content */
+      .about-content {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .profile-content {
+        text-align: center;
+        margin-top: 35px;
+        margin-left: 35px;
+        max-width: 400px;
+        height: 250px;
+        border: solid skyblue;
+        padding: 10px;
+      }
+
+      /* Styling for the navigation bar */
+      .nav {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      /* Styling for each item in the navigation bar */
+      .nav li {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: 0.4s all ease;
+        margin-right: 20px;
+        width: 90px;
+      }
+
+      .nav li:hover {
+        color: #cdcdcd;
+        transition: 0.4s all ease;
+      }
+
+      .nav li::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0px;
+        background-color: #0051ff;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+      }
+
+      .nav li:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      .nav li:last-child {
+        margin-right: 0;
+      }
+
+      /* Styling for the links in the navigation bar */
+      .nav a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+      .profile {
+        border-radius: 50%;
+        border: solid slateblue;
+        float: left;
+        height: 300px;
+        width: 300px;
+        outline-color: aquamarine;
+        outline-width: 5px;
+
+        object-fit: cover;
+        aspect-ratio: 1/1;
+      }
+
+      img {
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      .fade-in {
+        -webkit-animation: fadeIn 2s ease-in;
+        -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+        -o-animation: fadein 2s;
+        animation: fadein 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        transition: 5s;
+        opacity: 0;
+      }
+
+      @-webkit-keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-ms-keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-o-keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container fade-in">
+      <h1>STEMVocate Extended Learning</h1>
+
+      <ul class="nav fade-in">
+        <li><a href="STEMVocate.htm">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="https://www.stemvocate.com/">Website</a></li>
+        <li><a href="about.htm">About</a></li>
+      </ul>
+
+      <img class="fade-in" src="Stemvocate logo.png" alt="STEMVocate Logo" />
+
+      <h1>About Us</h1>
+      <p class="about-content fade-in">
+        Welcome to STEMVocate's About Us page. We are dedicated to spreading the
+        joys of robotics and learning to youth around Northern Virginia. Our
+        mission is to inspire young minds to explore the fields of Science,
+        Technology, Engineering, and Mathematics (STEM) through engaging courses
+        and resources. With a focus on robotics, we aim to cultivate creativity,
+        problem-solving skills, and a passion for learning. Join us on this
+        exciting journey and discover the endless possibilities of STEM
+        education.
+      </p>
+    </div>
+    <div class="container fade-in">
+      <h1>Contributers</h1>
+      <h2>Aarav Mohanty</h2>
+      <div class="container-profile fade-in">
+        <img src="IMG-7462.JPG" class="profile" alt="Image of Aarav Mohanty" />
+        <p class="profile-content">
+          Aarav is the founder of STEMVocate and he aspires to improve the
+          accessiblity of STEM programs in Northern Virginia. hr does robotics
+          want to go to university of michigan. He goes to oakton high school
+          and likes to play soccer on the school team. He likes to do things
+          like eat breathe and live liesdfgsdfgdsfgdfgsdfgsdfgsdfgsdfgsdfgsdf
+        </p>
+      </div>
+      <h2>Paul Lee</h2>
+      <div class="container-profile fade-in">
+        <img src="IMG-7462.JPG" class="profile" alt="Image of Aarav Mohanty" />
+        <p class="profile-content">
+          Aarav is the founder of STEMVocate and he aspires to improve the
+          accessiblity of STEM programs in Northern Virginia. hr does robotics
+          want to go to university of michigan. He goes to oakton high school
+          and likes to play soccer on the school team. He likes to do things
+          like eat breathe and live liesdfgsdfgdsfgdfgsdfgsdfgsdfgsdfgsdfgs
+        </p>
+      </div>
+      <!--
+      <p class="profile-content">
+        Aarav is the founder of STEMVocate and he aspires to improve the
+        accessiblity of STEM programs in Northern Virginia
+      </p>
+    --></div>
+  </body>
+=======
 <title>STEMVocate Course About Us</title>
 <style>
     /* Styling for the body of the page */

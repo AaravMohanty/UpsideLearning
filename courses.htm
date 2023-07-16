@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- view port is so the website looks good on all devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- P sure search engines dont really care anymore but keywords for appearing on a google search-->
+    <meta name="keywords" content="STEMVocate, Robotics, Learning, Course" />
+    <!-- description is the description given when on a search engine like google-->
+    <meta
+      name="description"
+      content="STEMVocate is a NPO dedicated to spread the joys of robotics and learning to youth around Northern Virginia"
+    />
+    <title>STEMVocate Course</title>
+  </head>
+  <style>
+    /* Styling for the body of the page */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #71b2dd;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styling for the container div */
+
+    .container {
+      max-width: 100%;
+      height: 100px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #1e1e1e;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .container-content {
+      background-color: #71b2dd;
+      height: 800px;
+    }
+
+    /* Styling for the heading*/
+
+    h1 {
+      text-align: left;
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      float: left;
+    }
+
+    /*Styling for the navigation bar */
+    .nav {
+      margin-bottom: 50px;
+      margin-top: 30px;
+      margin-left: 5px;
+      margin-right: 100px;
+      text-align: right;
+      width: 600px;
+      float: right;
+    }
+
+    .nav li {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      transition: 0.4s all ease;
+      margin-right: 20px;
+    }
+
+    .nav li:hover {
+      color: #cdcdcd;
+      transition: 0.4s all ease;
+    }
+
+    .nav li::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -5px;
+      left: 0px;
+      background-color: #0051ff;
+      transform-origin: bottom right;
+      transition: transform 0.5s ease-out;
+    }
+
+    .nav li:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .nav li:last-child {
+      margin-right: 0;
+    }
+
+    .nav a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    img {
+      object-fit: contain;
+    }
+
+    .logo {
+      height: 100px;
+      width: 100px;
+      margin-left: 20px;
+      margin-right: 100px;
+      margin-top: 0px;
+      float: left;
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+      padding-bottom: 30px;
+    }
+
+    .content {
+      color: rgb(6, 6, 70);
+      border-radius: 25px;
+      border-width: 3px;
+      height: 300px;
+      width: 300px;
+      margin-left: 200px;
+      margin-top: 200px;
+      border-color: #ff0000;
+    }
+
+    p {
+      color: #fff;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .fade-in {
+      -webkit-animation: fadeIn 2s ease-in;
+      -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+      -o-animation: fadein 2s;
+      animation: fadein 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      transition: 5s;
+      opacity: 0;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-ms-keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .button {
+      text-align: center;
+      margin-left: 100px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-right: 10px;
+      font-size: 16px;
+      margin-bottom: 25px;
+      width: 250px;
+    }
+
+    .login-button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 18px;
+    }
+  </style>
+  <head>
+    <title>STEMVocate Course</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="fade-in logo"
+        src="Stemvocate logo.png"
+        alt="STEMVocate Logo"
+      />
+      <h1>STEMVocate Course</h1>
+
+      <ul class="nav">
+        <li><a href="STEMVocate.htm">Home</a></li>
+        <li><a href="courses.htm">Courses</a></li>
+        <li><a href="https://www.stemvocate.com/"> Website </a></li>
+        <li><a href="about.htm">About</a></li>
+        <li><a href="#" class="login-button">Login</a></li>
+      </ul>
+    </div>
+    <div class="container-content container">
+      <img class="content" src="slime-edited.jpg" alt="Slime" />
+    </div>
+  </body>
+</html>

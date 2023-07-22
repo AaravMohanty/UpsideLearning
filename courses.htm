@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <!-- view port is so the website looks good on all devices-->
@@ -11,7 +10,6 @@
       name="description"
       content="STEMVocate is a NPO dedicated to spread the joys of robotics and learning to youth around Northern Virginia"
     />
-
     <title>STEMVocate Course</title>
   </head>
   <style>
@@ -39,9 +37,8 @@
     }
 
     .container-content {
-      background-color: #81c79c;
       background-color: #71b2dd;
-      height: 800px;
+      height: 2800px;
     }
 
     /* Styling for the heading*/
@@ -56,10 +53,10 @@
     h2 {
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 2px rgb(15, 92, 34);
-
       font-size: 36px;
       margin-bottom: 0px;
-      width: 550px;
+      max-width: 550px;
+      max-height: 50px;
       text-align: left;
     }
 
@@ -67,7 +64,8 @@
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 0.8px rgb(15, 92, 34);
       font-size: 24px;
-      width: 500px;
+      max-width: 500px;
+      margin-right: 0px;
     }
 
     /*Styling for the navigation bar */
@@ -77,7 +75,7 @@
       margin-left: 5px;
       margin-right: 100px;
       text-align: right;
-      width: 600px;
+      max-width: 600px;
       float: right;
     }
 
@@ -127,13 +125,12 @@
     }
 
     img {
-      object-fit: contain;
-      margin-bottom: 100px;
+      object-fit: cover;
     }
 
     .logo {
-      height: 100px;
-      width: 100px;
+      max-height: 100px;
+      max-width: 100px;
       margin-left: 20px;
       margin-right: 100px;
       margin-top: 0px;
@@ -144,43 +141,47 @@
       padding-bottom: 30px;
     }
 
-    .content {
+    .content-Image {
+      float: right;
       border-radius: 25px;
-      height: 200px;
-      width: 200px;
+      max-height: 200px;
+      max-width: 200px;
+      height: auto;
+      width: auto;
       margin-left: 20px;
       margin-top: 0px;
       border: 2px solid rgb(15, 92, 34);
-      float: right;
       position: relative;
       bottom: 250px;
       object-fit: cover;
     }
 
     .content-Chem {
-      height: 250px;
-      width: 700px;
+      max-height: 250px;
+      max-width: 700px;
       object-fit: fill;
     }
+
     .subcontent {
       border: 2px solid rgb(15, 92, 34);
       border-radius: 5% 15%;
-      height: 300px;
-      width: 1200px;
+      max-height: 300px;
+      max-width: 1200px;
       padding-left: 50px;
       padding-right: 50px;
-      position: relative;
-      left: 300px;
+
       background-color: rgb(174, 223, 188);
-      text-align: left;
+      text-align: center;
       margin-bottom: 100px;
+      margin-left: 250px;
     }
+
     .subcontent-twoImage {
-      width: 950px;
+      max-width: 950px;
     }
 
     .subcontent-oneImage {
-      width: 750px;
+      max-width: 750px;
     }
 
     p {
@@ -251,7 +252,7 @@
       margin-right: 10px;
       font-size: 16px;
       margin-bottom: 25px;
-      width: 250px;
+      max-width: 250px;
     }
 
     .login-button {
@@ -297,17 +298,17 @@
           to learn about more complicated engineering topics
         </h3>
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="catapult.png"
           alt="Catapult"
         />
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="balloon-car.png"
           alt="Balloon Car"
         />
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="rube-goldberg.jpg"
           alt="Rube Goldberg Machine"
         />
@@ -322,12 +323,12 @@
           designing bridges and other things.
         </h3>
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="egg-drop.png"
           alt="Egg Drop"
         />
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="paperbridge.jpg"
           alt="Paper Bridge"
         />
@@ -340,12 +341,12 @@
           to make simple robots that can do simple tasks
         </h3>
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="circuits.jpg"
           alt="Circuit"
         />
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="robotics.jpg"
           alt="Robotics"
         />
@@ -358,12 +359,12 @@
           lift, and many other concepts
         </h3>
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="parachute.jpg"
           alt="Parachute"
         />
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="rocket.jpg"
           alt="Rocket"
         />
@@ -372,16 +373,18 @@
       <div class="subcontent-oneImage subcontent">
         <h2 class="animate__animated animate__fadeInUpBig">Biology</h2>
         <h3 class="animate__animated animate__fadeInUp">
-          In the Biology section students will learn about DNA and how it shapes
-          the attributes of you as a person and many other things. Through a
-          simple experiment with strawberries students will be able to see DNA.
+          In the Biology section, students will learn about DNA and how it
+          shapes the attributes of you as a person and many other things.
+          Through a simple experiment with strawberries students will be able to
+          see DNA.
         </h3>
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="DNA.jpg"
           alt="DNA"
         />
       </div>
+
       <div class="subcontent">
         <h2 class="animate__animated animate__fadeInUpBig">Chemistry</h2>
         <h3 class="animate__animated animate__fadeInUp">
@@ -389,11 +392,12 @@
           learn about what it is and the many different applications there are.
         </h3>
         <img
-          class="content-Chem content animate__animated animate__fadeInRight"
+          class="content-Chem content-Image animate__animated animate__fadeInRight"
           src="density.jpg"
           alt="Density Example"
         />
       </div>
+
       <div class="subcontent-twoImage subcontent">
         <h2 class="animate__animated animate__fadeInUpBig">Optics</h2>
         <h3 class="animate__animated animate__fadeInUp">
@@ -402,12 +406,12 @@
           how cameras and other visual inventions work.
         </h3>
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="kaleidoscope.jpg"
           alt="Kaleidoscope"
         />
         <img
-          class="content animate__animated animate__fadeInRight"
+          class="content-Image animate__animated animate__fadeInRight"
           src="kaleidoscope2.jpg"
           alt="Kaleidoscope Pattern"
         />

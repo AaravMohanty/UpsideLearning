@@ -135,19 +135,17 @@ body {
 /* Styling for the container div */
 .container {
   max-width: 100%;
-  width: auto;
-  height: 300px;
+  height: 100px;
   margin: 0 auto;
-  margin-top: 0%;
-  padding: 40px;
+  margin-bottom: 75px;
+  padding: 20px;
   background-color: #1e1e1e;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
 
 /* Styling for the heading */
 h1 {
-  text-align: center;
+  float: left;
   font-size: 36px;
   color: hsl(0, 0%, 100%);
   margin-bottom: 30px;
@@ -161,8 +159,13 @@ h2 {
 
 /* Styling for the navigation bar */
 .nav {
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 100px;
+  text-align: right;
+  max-width: 600px;
+  float: right;
 }
 
 /* Styling for each item in the navigation bar */
@@ -214,9 +217,14 @@ h2 {
 
 /* Styling for the logo image */
 .logo-image {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: auto;
-  margin-bottom: 30px;
+  max-height: 100px;
+  max-width: 100px;
+  margin-left: 20px;
+  margin-right: 100px;
+  margin-top: 0px;
+  float: left;
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  padding-bottom: 30px;
 }

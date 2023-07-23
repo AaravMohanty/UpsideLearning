@@ -1,160 +1,222 @@
+@import "animate.css";
 body {
-    --color-primary: #009579;
-    --color-primary-dark: #007f67;
-    --color-secondary: #252c6a;
-    --color-error: #cc3333;
-    --color-success: #4bb544;
-    --border-radius: 4px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #81c79c;
-    background-color: #71b2dd;
+  --color-primary: #009579;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #81c79c;
+  background-color: #71b2dd;
 
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    background: var(--color-primary);
-    background: url(./background.jpg);
-    background-size: cover;
+  margin: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: var(--color-primary);
 }
 
-.container {
-    width: 400px;
-    max-width: 400px;
-    margin: 1rem;
-    padding: 2rem;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-    background: #ffffff;
+.form-container {
+  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: #ffffff;
 }
 
-.container,
+.form-container,
 .form__input,
 .form__button {
-    font: 500 1rem 'Quicksand', sans-serif;
+  font: 500 1rem "Quicksand", sans-serif;
 }
 
 .form--hidden {
-    display: none;
+  display: none;
 }
 
 .form > *:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .form > *:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .form__title {
-    margin-bottom: 2rem;
-    text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .form__message {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .form__message--success {
-    color: var(--color-success);
+  color: var(--color-success);
 }
 
 .form__message--error {
-    color: var(--color-error);
+  color: var(--color-error);
 }
 
 .form__input-group {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form__input {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    box-sizing: border-box;
-    border-radius: var(--border-radius);
-    border: 1px solid #dddddd;
-    outline: none;
-    background: #eeeeee;
-    transition: background 0.2s, border-color 0.2s;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+  transition: background 0.2s, border-color 0.2s;
 }
 
 .form__input:focus {
-    border-color: var(--color-primary);
-    background: #ffffff;
+  border-color: var(--color-primary);
+  background: #ffffff;
 }
 
 .form__input--error {
-    color: var(--color-error);
-    border-color: var(--color-error);
+  color: var(--color-error);
+  border-color: var(--color-error);
 }
 
 .form__input-error-message {
-    margin-top: 0.25rem;
-    font-size: 0.85rem;
-    color: var(--color-error);
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
 }
 
 .form__button {
-    width: 100%;
-    padding: 1rem 2rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #ffffff;
-    border: none;
-    border-radius: var(--border-radius);
-    outline: none;
-    cursor: pointer;
-    background: var(--color-primary);
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
 }
 
 .form__button:hover {
-    background: var(--color-primary-dark);
+  background: var(--color-primary-dark);
 }
 
 .form__button:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .form__text {
-    text-align: center;
+  text-align: center;
 }
 
 .form__link {
-    color: var(--color-secondary);
-    text-decoration: none;
-    cursor: pointer;
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .form__link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* Styling for the container div */
+.container {
+  max-width: 100%;
+  width: auto;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 0%;
+  padding: 40px;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Styling for the heading */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  color: black;
+}
+
+/* Styling for the navigation bar */
 .nav {
-    margin-bottom: 20px;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-  }
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-  /* Styling for each item in the navigation bar */
-  .nav li {
-    display: inline-block;
-  }
+/* Styling for each item in the navigation bar */
 
-  /* Styling for the links in the navigation bar */
-  .nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-right: 10px;
-    font-size: 16px;
-  }
-  
+.nav li {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s all ease;
+  margin-right: 20px;
+}
 
+.nav li:hover {
+  color: #cdcdcd;
+  transition: 0.4s all ease;
+}
+
+.nav li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0px;
+  background-color: #0051ff;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.nav li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/* Styling for the links in the navigation bar */
+.nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Styling for the logo image */
+.logo-image {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  margin-bottom: 30px;
+}

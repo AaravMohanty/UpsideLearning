@@ -13,7 +13,7 @@
       /* Styling for the body of the page */
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #141414;
+        background-color: #009579;
         margin: 0;
         padding: 0;
       }
@@ -47,13 +47,43 @@
       .nav {
         margin-bottom: 20px;
         text-align: center;
-        list-style: none;
-        padding: 0;
       }
 
       /* Styling for each item in the navigation bar */
+
       .nav li {
         display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: 0.4s all ease;
+        margin-right: 20px;
+      }
+
+      .nav li:hover {
+        color: #cdcdcd;
+        transition: 0.4s all ease;
+      }
+
+      .nav li::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0px;
+        background-color: #0051ff;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+      }
+
+      .nav li:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      .nav li:last-child {
+        margin-right: 0;
       }
 
       /* Styling for the links in the navigation bar */
@@ -64,7 +94,6 @@
         color: #fff;
         text-decoration: none;
         border-radius: 4px;
-        margin-right: 10px;
         font-size: 16px;
       }
 
@@ -72,6 +101,7 @@
       .logo-image {
         display: block;
         margin: 0 auto;
+        margin-top: 30px;
         width: 200px;
         height: auto;
         margin-bottom: 30px;
@@ -127,12 +157,17 @@
         <li><a href="courses.htm ">Courses</a></li>
         <li><a href="https://www.stemvocate.com/">Website</a></li>
         <li><a href="about.htm">About</a></li>
+        <li><a href="login.htm" class="login-button">Login</a></li>
       </ul>
 
-      <img class="logo-image" src="Stemvocate logo.png" alt="STEMVocate Logo" />
+      <img
+        class="logo-image animate__animated animate__pulse"
+        src="Stemvocate logo.png"
+        alt="STEMVocate Logo"
+      />
 
-      <h1>About Us</h1>
-      <p class="about-content">
+      <h1 class="animate__animated animate__fadeInDown">About Us</h1>
+      <p class="about-content animate__animated animate__fadeInDown">
         Welcome to STEMVocate's About Us page. We are dedicated to spreading the
         joys of robotics and learning to youth around Northern Virginia. Our
         mission is to inspire young minds to explore the fields of Science,
@@ -143,11 +178,11 @@
         education.
       </p>
 
-      <h1>Contributors</h1>
+      <h1 class="animate__animated animate__fadeInUp">Contributors</h1>
       <div class="contributors">
         <div class="contributor">
           <img
-            class="contributor-image"
+            class="contributor-image animate__animated animate__fadeInUp"
             src="IMG-7462.JPG"
             alt="Image of Aarav Mohanty"
           />
@@ -161,7 +196,7 @@
         </div>
         <div class="contributor">
           <img
-            class="contributor-image"
+            class="contributor-image animate__animated animate__fadeInUp"
             src="IMG-7462.JPG"
             alt="Image of Paul Lee"
           />

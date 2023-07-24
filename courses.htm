@@ -17,7 +17,9 @@
     /* Styling for the body of the page */
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #009579;
+      background-color: #81c79c;
+      background-color: #141414;
+
       margin: 0;
       padding: 0;
     }
@@ -35,29 +37,8 @@
     }
 
     .container-content {
-      background-color: #009579;
+      background-color: #141414;
       height: 2800px;
-    }
-
-    .subcontent {
-      border: 2px solid rgb(15, 92, 34);
-      border-radius: 5% 15%;
-      max-height: 300px;
-      max-width: 1200px;
-      padding-left: 50px;
-      padding-right: 50px;
-      background-color: #2e9c88;
-      text-align: center;
-      margin-bottom: 100px;
-      margin-left: 250px;
-    }
-
-    .subcontent-twoImage {
-      max-width: 950px;
-    }
-
-    .subcontent-oneImage {
-      max-width: 750px;
     }
 
     /* Styling for the heading*/
@@ -71,7 +52,7 @@
 
     h2 {
       color: rgb(255, 255, 255);
-      -webkit-text-stroke: 2px rgb(15, 92, 34);
+      /* -webkit-text-stroke: 2px rgb(15, 92, 34);*/
       font-size: 36px;
       margin-bottom: 0px;
       max-width: 550px;
@@ -81,7 +62,7 @@
 
     h3 {
       color: rgb(255, 255, 255);
-      -webkit-text-stroke: 0.8px rgb(15, 92, 34);
+      /*-webkit-text-stroke: 0.8px rgb(15, 92, 34);*/
       font-size: 24px;
       max-width: 500px;
       margin-right: 0px;
@@ -169,7 +150,7 @@
       width: auto;
       margin-left: 20px;
       margin-top: 0px;
-      border: 2px solid rgb(15, 92, 34);
+      border: 2px solid rgb(255, 255, 255);
       position: relative;
       bottom: 250px;
       object-fit: cover;
@@ -181,12 +162,82 @@
       object-fit: fill;
     }
 
+    .subcontent {
+      border: 2px solid rgb(255, 255, 255);
+      border-radius: 5% 15%;
+      max-height: 300px;
+      max-width: 1200px;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      background-color: rgb(41, 43, 42);
+      text-align: center;
+      margin-bottom: 100px;
+      margin-left: 100px;
+    }
+
+    .subcontent-twoImage {
+      max-width: 1200px;
+    }
+
+    .subcontent-oneImage {
+      max-width: 1200px;
+    }
+
     p {
       color: #fff;
       font-size: 20px;
       margin-top: 10px;
       margin-bottom: 25px;
       text-align: center;
+    }
+
+    .fade-in {
+      -webkit-animation: fadeIn 2s ease-in;
+      -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+      -o-animation: fadein 2s;
+      animation: fadein 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      transition: 5s;
+      opacity: 0;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-ms-keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     .button {
@@ -221,7 +272,11 @@
   </head>
   <body>
     <div class="container">
-      <img class="logo" src="Stemvocate logo.png" alt="STEMVocate Logo" />
+      <img
+        class="fade-in logo"
+        src="Stemvocate logo.png"
+        alt="STEMVocate Logo"
+      />
       <h1>STEMVocate Course</h1>
 
       <ul class="nav">

@@ -20,7 +20,8 @@ body {
 
 .form-container {
   width: 400px;
-  max-width: 400px;
+  max-width: auto;
+  max-height: auto;
   margin: 0 auto;
   margin-top: 5%;
   padding: 2rem;
@@ -71,6 +72,8 @@ body {
 
 .form__input {
   display: block;
+  max-width: auto;
+  max-height: auto;
   width: 100%;
   padding: 0.75rem;
   box-sizing: border-box;
@@ -98,6 +101,8 @@ body {
 }
 
 .form__button {
+  max-width: auto;
+  max-height: auto;
   width: 100%;
   padding: 1rem 2rem;
   font-weight: bold;
@@ -134,7 +139,8 @@ body {
 
 /* Styling for the container div */
 .container {
-  max-width: 100%;
+  max-width: auto;
+  max-height: auto;
   height: 100px;
   margin: 0 auto;
   margin-bottom: 75px;
@@ -164,7 +170,9 @@ h2 {
   margin-left: 5px;
   margin-right: 100px;
   text-align: right;
-  max-width: 600px;
+  max-width: auto;
+  max-height: auto;
+  width: 600px;
   float: right;
 }
 
